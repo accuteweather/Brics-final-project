@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:text="Our Services"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:id="@+id/cardview3">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/compost"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Food Waste pit"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:textSize="18dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center_horizontal"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview3"
+        android:id="@+id/cardview4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/digse"
+        android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Waste Slurry"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"/>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/waste"
+        android:layout_below="@+id/cardview4"/>
+    <TextView
+        android:id="@+id/marqueeText"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cardview4"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Food wastage appears to be higher in developed countries, while on the other hand, there are an estimated 842 million people in poor countries experiencing chronic hunger. According to Oxfam, the current pandemic has deepened the hunger crisis and “by the end of the year, 12,000 people per day could die from hunger linked to COVID-19, potentially more than will die from the disease itself”"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+</ScrollView>
